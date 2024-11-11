@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"E:\\JeuxAI\\TP3\\TP3_ShooterIA\\TP3ShootStarter\\Source\\TP3Shoot\\TP3Shoot.Build.cs",
+		"E:\\JeuxAI\\TP3\\TP3_ShooterIA\\TP3ShootStarter\\Source\\TP3Shoot.Target.cs",
+		"E:\\JeuxAI\\TP3\\TP3_ShooterIA\\TP3ShootStarter\\Source\\TP3ShootEditor.Target.cs"
+	],
+	"EngineVersion": "5.4.4"
+}

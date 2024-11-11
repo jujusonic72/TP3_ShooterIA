@@ -52,13 +52,15 @@ ATP3ShootCharacter::ATP3ShootCharacter()
 	FollowCamera->bUsePawnControlRotation = false; // Camera does not rotate relative to arm
 
 	// Create SK_Gun
-	SK_Gun = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Gun"));
-	SK_Gun->SetupAttachment(GetMesh());
-	// Set parent socket
-	SK_Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("GripPoint"));
+	//SK_Gun = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Gun"));
+	//SK_Gun->SetupAttachment(GetMesh());
+	//// Set parent socket
+	//SK_Gun->AttachToComponent(GetMesh(), FAttachmentTransformRules::KeepRelativeTransform, TEXT("GripPoint"));
 
 	// Note: The skeletal mesh and anim blueprint references on the Mesh component (inherited from Character) 
 	// are set in the derived blueprint asset named ThirdPersonCharacter (to avoid direct content references in C++)
+
+	
 }
 
 //////////////////////////////////////////////////////////////////////////
@@ -91,11 +93,13 @@ void ATP3ShootCharacter::SetupPlayerInputComponent(class UInputComponent* Player
 	PlayerInputComponent->BindAction("Aiming", IE_Released, this, &ATP3ShootCharacter::StopAiming);
 
 	// Fire
-	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ATP3ShootCharacter::Fire);
+	/*PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ATP3ShootCharacter::Fire);*/
 
 	// Boost Speed
 	PlayerInputComponent->BindAction("BoostSpeed", IE_Pressed, this, &ATP3ShootCharacter::BoostSpeed);
 	PlayerInputComponent->BindAction("BoostSpeed", IE_Released, this, &ATP3ShootCharacter::RemoveSpeedBoost);
+
+	//GetCharacterMovement()->JumpZVelocity = 999999999.f;
 }
 
 void ATP3ShootCharacter::TouchStarted(ETouchIndex::Type FingerIndex, FVector Location)
@@ -118,31 +122,27 @@ void ATP3ShootCharacter::StopAiming()
 	IsAiming = false;
 }
 
-void ATP3ShootCharacter::Fire()
-{
-	FVector Start, LineTraceEnd, ForwardVector;
-
-	if (IsAiming)
-	{
-
-		Start = FollowCamera->GetComponentLocation();
-
-		ForwardVector = FollowCamera->GetForwardVector();
-
-		LineTraceEnd = Start + (ForwardVector * 10000);
-	}
-	else {
-
-		// Get muzzle location
-		Start = SK_Gun->GetSocketLocation("MuzzleFlash");
-
-		// Get Rotation Forward Vector
-		ForwardVector = FollowCamera->GetForwardVector();
-
-		// Get End Point
-		LineTraceEnd = Start + (ForwardVector * 10000);
-	}
-}
+//void ATP3ShootCharacter::Fire()
+//{
+//	FVector Start, LineTraceEnd, ForwardVector, Muzzle, End;
+//	// Get muzzle location
+//	Muzzle = SK_Gun->GetSocketLocation("MuzzleFlash");
+//
+//		Start = FollowCamera->GetComponentLocation();
+//
+//		// Get Rotation Forward Vector
+//		ForwardVector = FollowCamera->GetForwardVector();
+//
+//		// Get End Point
+//		LineTraceEnd = Start + (ForwardVector * 10000);
+//
+//		FHitResult hitRes, hitStart, hitThreat;
+//		UKismetSystemLibrary::LineTraceSingle(GetWorld(), Start, LineTraceEnd, ETraceTypeQuery::TraceTypeQuery1, false, TArray<AActor*>(), EDrawDebugTrace::None, hitStart, true, FLinearColor::Red, FLinearColor::Black, 0.2f);
+//		UKismetSystemLibrary::LineTraceSingle(GetWorld(), Muzzle, hitStart.ImpactPoint, ETraceTypeQuery::TraceTypeQuery1, false, TArray<AActor*>(), EDrawDebugTrace::ForOneFrame , hitRes, true, FLinearColor::Red, FLinearColor::Black, 0.2f);
+//		UKismetSystemLibrary::SphereTraceSingle(GetWorld(), Muzzle, hitRes.ImpactPoint, 10.f, ETraceTypeQuery::TraceTypeQuery1, false, TArray<AActor*>(), EDrawDebugTrace::ForOneFrame, hitThreat, true, FLinearColor::Red, FLinearColor::Black, 0.2f);
+//		End = hitRes.ImpactPoint;
+//		FireParticle(Muzzle, End);
+//}
 
 
 
@@ -169,24 +169,24 @@ void ATP3ShootCharacter::RemoveSpeedBoost()
 }
 
 
-void ATP3ShootCharacter::FireParticle(FVector Start, FVector Impact)
-{
-	if (!ParticleStart || !ParticleImpact) return;
-
-	FTransform ParticleT;
-
-	ParticleT.SetLocation(Start);
-
-	ParticleT.SetScale3D(FVector(0.25, 0.25, 0.25));
-
-	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ParticleStart, ParticleT, true);
-
-	// Spawn particle at impact point
-	ParticleT.SetLocation(Impact);
-
-	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ParticleImpact, ParticleT, true);
-
-}
+//void ATP3ShootCharacter::FireParticle(FVector Start, FVector Impact)
+//{
+//	if (!ParticleStart || !ParticleImpact) return;
+//
+//	FTransform ParticleT;
+//
+//	ParticleT.SetLocation(Start);
+//
+//	ParticleT.SetScale3D(FVector(1, 1, 1));
+//
+//	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ParticleStart, ParticleT, true);
+//
+//	// Spawn particle at impact point
+//	ParticleT.SetLocation(Impact);
+//
+//	UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), ParticleImpact, ParticleT, true);
+//
+//}
 
 void ATP3ShootCharacter::TurnAtRate(float Rate)
 {
