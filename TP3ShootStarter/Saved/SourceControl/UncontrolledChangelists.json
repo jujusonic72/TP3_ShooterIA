@@ -1,0 +1,52 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/TD/BP_AIController.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/TD/BT_AI.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/TD/BB_AI.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/3/3A/7PBUEQBVXU44ERUCODP5RB.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter_2.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/ThirdPerson/Blueprints/BP_AICharacter.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/ST/6780S985RQMFOC1B1M3YWB.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/TD/NavigationQuery.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/ThirdPerson/Maps/ThirdPersonMap.umap",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/2/HA/F60SM3G9OFJ7BZXXPEZCMR.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/TD/BotPointofInterest.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/TD/BotContext.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/5/B8/RU139KQXPJCDY2TC5MJVL0.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/D/9U/XTMQIKOF87XMN1GSYBXTPI.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/6/B2/TP068V1K4YRV92VDROBD2T.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/F/3A/80NFYOWP8YCGZHWEBMDC75.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/7/02/8OEJSGG5SVI2LG5WQ6TAW8.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/8/O9/PU39VRA1FBU905IJSS455J.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/TD/NavArea_Cheap.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/C/U7/A78J4GFVF00PHLJ23P0A44.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/FirstPerson/Input/IMC_Default.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/FPWeapon/Audio/MuteGunfire.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/TD/ShootingService.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/TD/testingpawn.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/ImportedContent/Gun/Gun_Rifle.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/AZ/A7GPT109Y6ZTTJD4A7TXER.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/StarterContent/HDRI/HDRI_Epic_Courtyard_Daylight.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/DMap.umap",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/3/JD/M783RQJAR4FGAS5MLN2TLU.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/AI/Blueprints/Combat_EQS.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/AI/Blueprints/TargetContext.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/TD/Retreat_EQS.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/0/VY/GHHUAFMMO3J74TYAJWACON.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/3/87/H6D68NKOYPZ9B29MI5PYDA.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/0/9T/H7ZKM4T8T6R5MT3LHUOGJG.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/LM/A3F57HAOQIRNICD4M92N66.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/3/FC/IYOU3LK3LJEEYFE0ZNM73A.uasset",
+				"D:/Users/thoma/Documents/Unreal Projects/TP3_ShooterAI/TP3_ShooterAI_Reset/TP3ShootStarter/TP3ShootStarter/Content/TD/ShootingStatus.uasset"
+			]
+		}
+	]
+}

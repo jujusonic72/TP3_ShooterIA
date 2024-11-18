@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Users\\thoma\\Documents\\Unreal Projects\\TP3_ShooterAI\\TP3_ShooterAI_Reset\\TP3ShootStarter\\TP3ShootStarter\\Source\\TP3Shoot\\TP3Shoot.Build.cs",
+		"D:\\Users\\thoma\\Documents\\Unreal Projects\\TP3_ShooterAI\\TP3_ShooterAI_Reset\\TP3ShootStarter\\TP3ShootStarter\\Source\\TP3Shoot.Target.cs",
+		"D:\\Users\\thoma\\Documents\\Unreal Projects\\TP3_ShooterAI\\TP3_ShooterAI_Reset\\TP3ShootStarter\\TP3ShootStarter\\Source\\TP3ShootEditor.Target.cs"
+	],
+	"EngineVersion": "5.4.4"
+}
